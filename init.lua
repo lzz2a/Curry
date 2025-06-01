@@ -6,8 +6,6 @@
 --[[
     tobiware typ hsi
 --]]
-
-getgenv().Timing = 0.3
 local a
 a = {
 	cache = {},
@@ -175,6 +173,7 @@ do
 		end
 		function c:Init()
 			d.ShootingStarted:Connect(function()
+				print("Shooting started")
 				local e = game:GetService("Stats")
 				local f = e.Network.ServerStatsItem["Data Ping"]:GetValue()
 				if getgenv().Shots[c.LastShotType] then
