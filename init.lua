@@ -198,7 +198,7 @@ do
 		return c
 	end
 end
-getgenv().Shots = { Normal = 0.4, SemiSlow = 0.47, Fast = 0.31, SuperFast = 0.31 }
+getgenv().Shots = { Normal = 0.4, SemiSlow = 0.47, Fast = 0.3, SuperFast = 0.3 }
 if not getgenv().Executed then
 	getgenv().Executed = true
 	setfpscap(math.huge)
